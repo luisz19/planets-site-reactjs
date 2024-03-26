@@ -1,0 +1,48 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+
+    @mixin FontStyle ($text-transform, $font-size, $font-weight, $letter-spacing, $line-height){
+        text-transform: $text-transform;
+        font-size: $font-size;
+        font-weight: $font-weight;
+        letter-spacing: $letter-spacing;
+        line-height: $line-height;
+    }
+
+    figure img{
+        width: 150px;
+        padding: 45px 0px;
+    }
+
+    h2#PlanetName {
+        @include FontStyle(uppercase, 2.7rem, 500, 0.1px, normal);
+        padding-bottom: 20px;
+    
+    }
+
+    p#DescriptionPlanet {
+        text-align: center;
+        padding-bottom: 15px;
+        @include FontStyle(normal, 0.9rem, 350, 1px, 1.5rem);
+        
+    }
+
+    .LinkWikioedia {
+        color: $gray-light;
+        font-size: 0.9rem;
+        font-weight: 450;
+
+        a {
+            color: $gray-light;
+           
+        }
+
+        &::after {
+            content: url("../assets/icon-source.svg");
+        }
+    }
+
+}

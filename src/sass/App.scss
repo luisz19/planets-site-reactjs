@@ -1,0 +1,16 @@
+
+@import './HeaderPlanet.componet.scss';
+@import './Var.scss';
+@import './NavBar.scss';
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@import './MainPlanets.scss';
+@import './InformationPlanets';
+
+.App {
+    font-family: "Roboto Condensed", sans-serif;
+    color: #fff;
+    overflow-y: auto;
+}
+
+
+

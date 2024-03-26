@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+.HeaderPlanet {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: lighter;
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.4039215686);
+  padding: 20px;
+  font-family: "Roboto Condensed", sans-serif;
+}
+.HeaderPlanet .ButtonMenu {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.NavBar {
+  display: flex;
+  justify-content: space-around;
+  padding: 15px;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 3px;
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.4039215686);
+}
+.NavBar li {
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.NavBar li:hover {
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px;
+}
+main figure img {
+  width: 150px;
+  padding: 45px 0px;
+}
+main h2#PlanetName {
+  text-transform: uppercase;
+  font-size: 2.7rem;
+  font-weight: 500;
+  letter-spacing: 0.1px;
+  line-height: normal;
+  padding-bottom: 20px;
+}
+main p#DescriptionPlanet {
+  text-align: center;
+  padding-bottom: 15px;
+  text-transform: normal;
+  font-size: 0.9rem;
+  font-weight: 350;
+  letter-spacing: 1px;
+  line-height: 1.5rem;
+}
+main .LinkWikioedia {
+  color: rgba(255, 255, 255, 0.4745098039);
+  font-size: 0.9rem;
+  font-weight: 450;
+}
+main .LinkWikioedia a {
+  color: rgba(255, 255, 255, 0.4745098039);
+}
+main .LinkWikioedia::after {
+  content: url("../assets/icon-source.svg");
+}
+
+.InformationPlanets {
+  padding: 0px 20px;
+}
+.InformationPlanets ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+}
+.InformationPlanets ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: normal;
+  color: rgba(255, 255, 255, 0.4745098039);
+  border: 1px solid rgba(255, 255, 255, 0.4745098039);
+  padding: 14px 18px;
+}
+.InformationPlanets ul li span {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: 0rem;
+  color: white;
+}
+
+.App {
+  font-family: "Roboto Condensed", sans-serif;
+  color: #fff;
+  overflow-y: auto;
+}
+
+/*# sourceMappingURL=App.css.map */
