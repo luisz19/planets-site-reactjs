@@ -1,0 +1,68 @@
+nav.MenuNav {
+    // display: none; //para block
+    position: fixed;
+    top: 0;
+    right: -100%; //para 0px
+    background-color: $menu;
+    width: 55vw;
+    height: 100vh;
+    transition: all 0.5s ease-in-out;
+
+    &.open {
+        right: 0%; //muda a classe
+    }
+
+
+    ul{
+        
+        .btnColumn{
+            display: flex;
+            justify-content: space-between;
+            padding: 30px;
+            font-size: 1.5rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            background-color: $menu;
+            border-bottom: 2px solid $gray-light;
+
+            .ButtonMenu {
+                background-color: transparent;
+                border: none;
+                cursor: pointer;
+                
+                
+            }
+            
+        }
+       
+        li:not(:first-child){
+
+            background-color: $menu;
+            font-size: 1.4rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            padding: 25px;
+            cursor: pointer;
+            border-bottom: 1px solid $gray-light;
+            transition: all 0.5s ease-in-out;
+
+            &:hover {
+                padding: 27px;
+                text-shadow: 0 0 15px rgba(255, 255, 255, 0.486), 0 0 10px rgba(255, 255, 255, 0.445);
+
+               
+            }
+
+           
+
+            a {
+                background-color: transparent;
+                color: $white;
+                text-decoration: none;
+
+            }
+        }
+    
+  
+    }
+}
