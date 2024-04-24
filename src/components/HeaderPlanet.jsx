@@ -1,4 +1,4 @@
-import Nav from './Nav'
+
 import ButtonMenu from './ButtonMenu'
 import Menu from './Menu'
 import { useState } from 'react'
@@ -17,7 +17,7 @@ function HeaderPlanet () {
                 <ButtonMenu toggleMenu={toggleMenu} />
                 <Menu isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} />
             </header>
-            <Nav />
+            
         </div>
     )
 }

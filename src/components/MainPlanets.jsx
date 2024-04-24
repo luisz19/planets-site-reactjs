@@ -1,5 +1,8 @@
 import InformationPlanets from "./InformationPlanets"
 import Texts from "./Texts"
+import ImgPlanets from "./ImgPlanets"
+import { useState } from "react"
+import Nav from './Nav'
 
 const planetsData = {
     earth : {
@@ -28,13 +31,23 @@ const planetsData = {
 }
 
 function MainPlanets () {
-    
+    const [structurePlanet, setStructurePlanet] = useState('overview') //funçoes botões da nav
+
+    const changeStructure = (structureIMG) => {
+        setStructurePlanet(structureIMG)
+    }
+
+    const [displayGeology, setDisplayGeology] = useState(true);
+
+    const showGeology = () => {
+        setDisplayGeology(!displayGeology);
+    };
+
     return (
         <div>
+             <Nav onChangeIMG={changeStructure} showGeology={showGeology}/>
             <main>
-                <figure className="MainPlanet">
-                    <img id="PlanetImage" src="./src/assets/planet-earth.svg" alt="Planet Earth"/>
-                </figure>
+                <ImgPlanets structureIMG={structurePlanet} display={displayGeology ? 'block' : 'none'}/>
                 
                 <Texts 
                     name = {planetsData.earth.name}
@@ -62,10 +75,3 @@ function MainPlanets () {
 
 export default MainPlanets
 
-/* <h2 id="PlanetName">Earth</h2>
-                <p id="DescriptionPlanet">
-                    Earth is the third planet from the Sun and the only place in the universe known to harbor life. Lorem ipsum dolor sit amet consectetur adipisicing elit. lorem iopsum cadabra xulipa
-                </p>
-                <span className="LinkWikioedia">
-                    Source: <a href="#">Wikipedia</a>
-                </span> */

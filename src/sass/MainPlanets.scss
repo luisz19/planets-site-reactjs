@@ -12,9 +12,21 @@ main {
         line-height: $line-height;
     }
 
-    figure img{
-        width: 150px;
-        padding: 45px 0px;
+    figure {
+        display: flex;
+        img{
+            width: 150px;
+            padding: 45px 0px;
+        }
+        .geologyPlanet {
+            display: none;
+            position: absolute;
+            background-color: transparent;
+            top:40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 130px;
+        } 
     }
 
     h2#PlanetName {
